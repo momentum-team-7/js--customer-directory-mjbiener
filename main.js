@@ -39,9 +39,6 @@ console.log("customer registered ", customer.registered)
 
 
 
-
-
-
 for (let customer of customers) {
     const customerImg= document.createElement("img")
     customerImg.src= customer.picture.thumbnail //; url ="https://randomuser.me/api/portraits/thumb/women/62.jpg"

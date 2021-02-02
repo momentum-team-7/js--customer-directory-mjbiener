@@ -44,31 +44,31 @@ console.log("customer registered ", customer.registered)
 
 for (let customer of customers) {
     const customerImg= document.createElement("img")
-customerImg.src= customer.picture.thumbnail; url ="https://randomuser.me/api/portraits/thumb/women/62.jpg"
-container.appendChild (customerImg)
+    customerImg.src= customer.picture.thumbnail //; url ="https://randomuser.me/api/portraits/thumb/women/62.jpg"
+    container.appendChild (customerImg)
 
-const customerName= document.createElement("h3")
-customerName.innerText=`${customer.name.first} ${customer.name.last}`
-container.appendChild (customerName)
+    const customerName= document.createElement("h3")
+    customerName.innerText=`${customer.name.first} ${customer.name.last}`
+    container.appendChild (customerName)
 
-const customerEmail= document.createElement("h4")
-customerEmail.innerText= customer.email
-container.appendChild (customerEmail)
+    const customerEmail= document.createElement("h4")
+    customerEmail.innerText= customer.email
+    container.appendChild (customerEmail)
 
-const customerPhone= document.createElement("h4")
-customerPhone.innerText= customer.phone
-container.appendChild (customerPhone)
+    const customerPhone= document.createElement("h4")
+    customerPhone.innerText= customer.phone
+    container.appendChild (customerPhone)
 
-const customerAddress= document.createElement("h4")
-customerAddress.innerText=`${customer.location.street.number} ${customer.location.street.name} 
-${customer.location.city}, ${customer.location.state} ${customer.location.postcode}`
-container.appendChild (customerAddress)
+    const customerAddress= document.createElement("h4")
+    customerAddress.innerText=`${customer.location.street.number} ${customer.location.street.name} 
+    ${customer.location.city}, ${nameToAbbr(customer.location.state)} ${customer.location.postcode}`
+    container.appendChild (customerAddress)
 
-const customerBirthDate= document.createElement("h4")
-customerBirthDate.innerText= customer.dob.date
-container.appendChild (customerBirthDate)
+    const customerBirthDate= document.createElement("h4")
+    customerBirthDate.innerText= customer.dob.date
+    container.appendChild (customerBirthDate)
 
-const customerSinceDate= document.createElement("h4")
-customerSinceDate.innerText= customer.registered.date
-container.appendChild (customerSinceDate)
+    const customerSinceDate= document.createElement("h4")
+    customerSinceDate.innerText= customer.registered.date
+    container.appendChild (customerSinceDate)
 }
